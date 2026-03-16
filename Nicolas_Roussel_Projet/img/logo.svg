@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 726.47 450">
+    <defs>
+        <style>
+            .cls-1 { fill: currentColor; stroke-width: 0px; }
+        </style>
+    </defs>
+    <path class="cls-1" d="M0,450h726.47V0H0v450ZM664.7,391.17H61.76V58.82h602.94v332.35h0Z"/>
+    <polygon class="cls-1" points="564.45 323.52 596.42 126.47 511.14 126.47 495.64 238.23 407.34 238.23 407.34 126.47 319.1 126.47 319.1 238.23 230.82 238.23 215.32 126.47 130.04 126.47 160.09 323.52 564.45 323.52"/>
+</svg>

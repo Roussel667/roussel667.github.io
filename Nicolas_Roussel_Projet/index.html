@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="h-100">
+    <div class="container">
+        <header class="d-flex justify-content-between">
+            <a href="#"><svg class="logo" viewBox="0 0 726.47 450" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,450h726.47V0H0v450ZM664.7,391.17H61.76V58.82h602.94v332.35h0Z"/>
+        <polygon points="564.45 323.52 596.42 126.47 511.14 126.47 495.64 238.23 407.34 238.23 407.34 126.47 319.1 126.47 319.1 238.23 230.82 238.23 215.32 126.47 130.04 126.47 160.09 323.52 564.45 323.52"/>
+    </svg></a>
+            <nav>
+                <ul class="d-flex"> 
+                    <a class="text-decoration-none" href=""><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+                    <a class="text-decoration-none" href=""><li>Produits</li></a>
+                    <a class="text-decoration-none" href=""><li>Contact</li></a>
+                </ul>
+            </nav>
+        </header>        
+            <div>
+                <img class="w-100 mt-2" src="img/banniere-officiel.jpg" alt="clavier">
+            </div>
+    </div>
+
+    <div class="container">
+        <main>
+            <div class="d-flex justify-content-between">
+                <h1 class="produitPop pt-5">Produits À la Une</h1>
+
+                <div class="align-self-end mb-2">
+                    <a href="" class="d-flex align-items-center gap-2 text-decoration-none allezProduit">
+                        <i class="fa-sharp-duotone fa-solid fa-arrow-right-to-bracket"></i>
+                        <p class="mb-0">Allez vers tous les Produits</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-6">
+                    <div class="box1 text-center">
+                        <img class="w-100" src="img/clavierTenZ80he.png" alt="80heTenZ">
+
+                        <h2>Nouvelle Ère <div class="TenZ">TenZ</div></h2>
+                        <p>Maintenant disponible</p>
+
+                        <button type="button" class="btn btn-red-custom">Voir Plus</button>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="box2 text-center">
+                    
+                        <img class="w-100" src="img/clavier60heV2.png" alt="60heV1">
+
+                        <h2>Un Classique, <div class="reinvente">Réinventé</div></h2>
+                        <p>Le plus Efficace en compétition FPS</p>
+
+                        <button type="button" class="btn btn-gold-custom">Voir Plus</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="histoire mt-5 d-flex">
+                <div class="histoireTexte">
+                        <h1 id="histwooting">L'histoire de Wooting</h1>
+                        <p>Nous en avions assez d'une industrie qui privilégiait le profit au détriment du progrès, en perpétuant toujours le même stéréotype dépassé de ce qu'un « gamer » est censé vouloir, sans réelle volonté d'innover ni de résoudre les vrais problèmes des utilisateurs. Les produits étaient conçus pour se vendre, pas pour servir. Et une fois la vente conclue, la conversation s'arrêtait.</p>
+
+
+
+
+                        <!-- Button trigger modal -->
+                        <button type="button"
+                                class="voirplus btn btn-dark"
+                                data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Voir plus
+                            </button>
+
+                        
+                    </div>
+                <div class="histoireImage">
+                    <img src="img/wooting60he_histoire.jpg" alt="">
+                </div>                
+            </div>            
+        </main>
+
+        <section>
+            <H1 class="categorie pt-5">Catégorie</H1>
+
+            <div class="toutBouto d-flex">
+
+                
+                <div class="boutoH">
+                    <button type="button"
+                            class="btn-categorie"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ongletHardware">
+                     
+                        <img src="img/boutonH.png" alt="Hardware">
+                        <h2 class="survol-texte">Hardware</h2>
+
+                    </button>
+                </div>
+                
+
+                <div class="boutoA">
+                    <button type="button"
+                            class="btn-categorie"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ongletAccessoire">
+                     
+                        <img src="img/boutonA.png" alt="Accessoire">
+                        <h2 class="survol-texte">Accessoire</h2>
+
+                    </button>
+                </div>
+
+                <div class="boutoC">
+                    <button type="button"
+                            class="btn-categorie"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ongletClavier">
+                     
+                        <img src="img/boutonC.png" alt="Clavier">
+                        <h2 class="survol-texte">Clavier</h2>
+
+                    </button>
+                </div>
+
+                <div class="boutoK">
+                    <button type="button"
+                            class="btn-categorie"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ongletKeycaps">
+                     
+                        <img src="img/boutonK.png" alt="KeyCaps">
+                        <h2 class="survol-texte">KeyCaps</h2>
+
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal Hardware-->
+<div class="modal fade" id="ongletHardware" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content modal-dark">
+
+      <div class="modal-header border-0">
+        <h4 class="modal-title text-white">Hardware</h4>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row g-4">
+
+          <!-- Produit 1-->
+          <div class="w-50">
+            <div class="product-card">
+              <img src="img/LekkenTikkenSwitch.jpg" class="product-img">
+              <h5>Tikken Lekken Switches</h5>
+              <button class="btn btn-outline-light btn-sm">Voir</button>
+            </div>
+          </div>
+
+          <!-- Produit 2-->
+          <div class="w-50">
+            <div class="product-card">
+              <img src="img/uwuWooting.png" class="product-img">
+              <h5>Wooting UwU</h5>
+              <button class="btn btn-outline-light btn-sm">Voir</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal Accessoire-->
+<div class="modal fade" id="ongletAccessoire" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content modal-dark">
+
+      <div class="modal-header border-0">
+        <h4 class="modal-title text-white">Accessoire</h4>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row g-4">
+
+          <!-- Produit 1-->
+          <div class="w-50">
+            <div class="product-card">
+              <img src="img/cableWooting.jpg" class="product-img">
+              <h5>Cable pour Wooting</h5>
+              <button class="btn btn-outline-light btn-sm">Voir</button>
+            </div>
+          </div>
+
+          <!-- Produit 2-->
+          <div class="w-50">
+            <div class="product-card">
+              <img src="img/wooting60HeAlluminiumCase.jpg" class="product-img">
+              <h5>60HE (v2) Aluminum Case</h5>
+              <button class="btn btn-outline-light btn-sm">Voir</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal Clavier-->
+<div class="modal fade" id="ongletClavier" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content modal-dark">
+
+      <div class="modal-header border-0">
+        <h4 class="modal-title text-white">Clavier</h4>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row g-4">
+
+          <!-- Produit 1-->
+          <div class="w-50">
+            <div class="product-card">
+              <img src="img/clavier60heV1.png" class="product-img">
+              <h5>Clavier 60He V1</h5>
+              <button class="btn btn-outline-light btn-sm">Voir</button>
+            </div>
+          </div>
+
+          <!-- Produit 2-->
+          <div class="w-50">
+            <div class="product-card">
+              <img src="img/clavier80heV1.png" class="product-img">
+              <h5>Clavier 80He V1</h5>
+              <button class="btn btn-outline-light btn-sm">Voir</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal Keycaps-->
+<div class="modal fade" id="ongletKeycaps" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content modal-dark">
+
+      <div class="modal-header border-0">
+        <h4 class="modal-title text-white">Keycaps</h4>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row g-4">
+
+          <!-- Produit 1-->
+          <div class="w-50">
+            <div class="product-card">
+              <img src="img/clavier60heV1.png" class="product-img">
+              <h5>Clavier 60HE V1</h5>
+              <button class="btn btn-outline-light btn-sm">Voir</button>
+            </div>
+          </div>
+
+          <!-- Produit 2-->
+          <div class="w-50">
+            <div class="product-card">
+              <img src="img/tenzPopUp.jpg" class="product-img">
+              <h5>Clavier 60HE V2</h5>
+              <button class="btn btn-outline-light btn-sm">Voir</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<!-- Modal Voir plus-->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                            <div class="modal-header bg-dark-subtle">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Information Supplémentaire</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                                <div class="texteJaunatre modal-body">
+                                    <img class="w-100" src="img/histoire.jpg" alt="évènement">
+                                    <p>
+                                    Pour nous, l'innovation doit avoir un impact réel — et cela n'est possible que lorsque l'on construit avec intention et que l'on écoute celles et ceux pour qui l'on crée. C'est pourquoi nous ne vous considérons pas comme de simples clients, mais comme des parties prenantes essentielles. Vous méritez d'être informés, impliqués et pris au sérieux. Ainsi, une fois la vente effectuée, la conversation ne fait que devenir plus intéressante.</p>
+
+                                    <p>Alors que les claviers à entrée numérique dominaient un marché davantage préoccupé par des fonctionnalités RGB superficielles, nous avons vu l'avenir dans les claviers à entrée analogique. Ils permettent une saisie plus rapide, un contrôle plus précis et ouvrent la voie à des fonctionnalités que les claviers numériques ne peuvent tout simplement pas offrir.</p>
+
+                                    <p></p>En 2015, nous avons entamé notre aventure avec l'ambition de faire des claviers à entrée analogique le nouveau standard, d'en explorer tout le potentiel et de bousculer une industrie devenue bien trop confortable, en montrant l'exemple.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+    <script src="js/init.js"></script>
+    <!-- Bootstrap --> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="svg-injector.min.js"></script>
+    
+    <script> 
+// Elements to inject 
+var mySVGsToInject = document.querySelectorAll('img.inject-me'); 
+// Do the injection 
+SVGInjector(mySVGsToInject);
+
+</script>
+</body>
+</html>
