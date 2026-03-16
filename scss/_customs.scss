@@ -59,6 +59,9 @@ li{
 li:hover {
     border-bottom: #FAD168 2px solid;
 }
+nav a {
+    text-decoration: none;
+}
 .produitPop{
     color: #717276;
     font-family: "Exo 2", sans-serif;
@@ -156,9 +159,6 @@ li:hover {
     border-color: #09090B;
 }
 
-//Minimal sober dark tech background, 1920x1080, deep charcoal gray gradient, soft centered spotlight glow, subtle concrete texture, very light vignette on edges, cinematic lighting, clean modern aesthetic, no objects, no keyboard, no text, high resolution, realistic texture
-
-//Minimal dark studio background, charcoal gray gradient, soft diffused spotlight in the center, subtle matte concrete texture, soft shadows, clean modern tech aesthetic, no objects, no text, 1920x1080, ultra realistic, 4K quality
 
 .histoire {
     gap: 50px;
@@ -279,4 +279,41 @@ li:hover {
     color:white;
     font-size:16px;
     margin-bottom:10px;
+}
+
+
+
+
+
+//Bouton retour en haut
+#retourHaut {
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    background-color: #FAD168;
+    box-shadow:0 0 15px rgb(250, 209, 104, 0.4);
+    color: #0f0f0f;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 3rem;
+    display: flex;
+    line-height: 1;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    padding: 0;
+ 
+}
+
+#retourHaut:hover {
+    background-color: #eec72a;
+    box-shadow:0 0 15px rgb(250, 209, 104);
+}
+#retourHaut.display{
+    opacity: 1;
 }
