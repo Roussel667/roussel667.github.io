@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nom": "Wooting 80HE TenZ Edition",
+    "description": "Clavier analogique édition TenZ conçu pour la performance compétitive en FPS.",
+    "prix": 249.99,
+    "categorie": "clavier",
+    "image": "img/clavierTenZ80he.png"
+  },
+  {
+    "id": 2,
+    "nom": "Tikken Lekken Switches",
+    "description": "Switch analogique développé pour les claviers Wooting offrant une précision exceptionnelle.",
+    "prix": 29.99,
+    "categorie": "hardware",
+    "image": "img/lekkenTikkenSwitch.jpg"
+  },
+  {
+    "id": 3,
+    "nom": "Wooting UwU",
+    "description": "Mini clavier macro compact parfait pour le gaming et les raccourcis personnalisés.",
+    "prix": 89.99,
+    "categorie": "hardware",
+    "image": "img/uwuWooting.png"
+  },
+  {
+    "id": 4,
+    "nom": "Cable pour Wooting",
+    "description": "Câble USB haute qualité conçu spécialement pour les claviers Wooting.",
+    "prix": 19.99,
+    "categorie": "accessoire",
+    "image": "img/cableWooting.jpg"
+  },
+  {
+    "id": 5,
+    "nom": "60HE (v2) Travel Case",
+    "description": "Étui de transport robuste pour protéger votre clavier Wooting 60HE.",
+    "prix": 39.99,
+    "categorie": "accessoire",
+    "image": "img/travelCase1.png"
+  },
+  {
+    "id": 6,
+    "nom": "Wooting 60HE V1",
+    "description": "Clavier analogique compact 60% idéal pour les joueurs compétitifs.",
+    "prix": 199.99,
+    "categorie": "clavier",
+    "image": "img/clavier60heV1.png"
+  },
+  {
+    "id": 7,
+    "nom": "Wooting 80HE V1",
+    "description": "Clavier analogique 80% offrant un parfait équilibre entre compacité et fonctionnalités.",
+    "prix": 219.99,
+    "categorie": "clavier",
+    "image": "img/clavier80heV1.png"
+  },
+  {
+    "id": 8,
+    "nom": "GMK Red Samurai Keycap Set",
+    "description": "Ensemble de keycaps inspiré du style japonais avec un design rouge et or.",
+    "prix": 129.99,
+    "categorie": "keycaps",
+    "image": "img/keycaps1JapRouge.png"
+  },
+  {
+    "id": 9,
+    "nom": "Magnetic Wave Keycap Set",
+    "description": "Keycaps au design moderne avec motif vague et finition premium.",
+    "prix": 99.99,
+    "categorie": "keycaps",
+    "image": "img/keycaps2Wave1.png"
+  }
+]

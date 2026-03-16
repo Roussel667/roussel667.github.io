@@ -20,9 +20,16 @@
     </svg></a>
             <nav>
                 <ul class="d-flex"> 
-                    <a href=""><li><i class="fa-solid fa-cart-shopping"></i></li></a>
-                    <a href=""><li>Produits</li></a>
-                    <a class="contact" href=""><li>Contact</li></a>
+                    <li class="nav-item me-3" style="cursor: pointer;" data-bs-toggle="offcanvas" data-bs-target="#panierLateral">
+            <a href="#" class="position-relative">
+                <i class="fa-solid fa-cart-shopping text-white"></i>
+                <span id="compteurPanier" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">
+                    0
+                </span>
+            </a>
+        </li>
+                    <a href="#"><li>Produits</li></a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#modalContact"><li>Contact</li></a>
                 </ul>
             </nav>
         </header>        
@@ -37,7 +44,7 @@
                 <h1 class="produitPop pt-5">Produits À la Une</h1>
 
                 <div class="align-self-end mb-2">
-                    <a href="" class="d-flex align-items-center gap-2 text-decoration-none allezProduit">
+                    <a href="#" class="d-flex align-items-center gap-2 text-decoration-none allezProduit">
                         <i class="fa-sharp-duotone fa-solid fa-arrow-right-to-bracket"></i>
                         <p class="mb-0">Allez vers tous les Produits</p>
                     </a>
@@ -150,11 +157,27 @@
         </section>
     </div>
 
+    <footer>
+      <ul class="d-flex justify-content-center">
+        <li><a href="https://discord.gg/wooting" target="_blank"><i class="fa-brands fa-discord"></i></a> </li>
+          <li><a href="https://www.youtube.com/@Wooting" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="https://www.instagram.com/wootingkb" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://x.com/WootingKB" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>       
+    </ul>
+    
+      <div class="ref d-flex">
+        <p>References  : </p>
+        <ul class="siteRef">
+          <li><a href="https://drop.com/" target="_blank">Drop</a></li>
+          <li><a href="https://wooting.io/" target="_blank">Wooting</a></li>
+        </ul>
+        
+      </div>
+
+    </footer>
+
+
     <button id="retourHaut">↑</button>
-
-
-
-
 
 
 
@@ -174,14 +197,14 @@
 
       <div class="modal-body">
 
-        <div class="row g-4">
+        <div class="row g-4" id="hardProduit">
 
           <!-- Produit 1-->
           <div class="w-50">
             <div class="product-card">
               <img src="img/lekkenTikkenSwitch.jpg" class="product-img">
               <h5>Tikken Lekken Switches</h5>
-              <button class="btn btn-outline-light btn-sm">Voir</button>
+              <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#productModal">Voir</button>
             </div>
           </div>
 
@@ -190,7 +213,7 @@
             <div class="product-card">
               <img src="img/uwuWooting.png" class="product-img">
               <h5>Wooting UwU</h5>
-              <button class="btn btn-outline-light btn-sm">Voir</button>
+              <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#productModal">Voir</button>
             </div>
           </div>
 
@@ -328,8 +351,102 @@
 
 
 
+<!--Modal pour chaque produit-->
+
+<!-- Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-warning">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-warning">Nom du produit</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-warning ajouter-panier" id="addToCart">Ajouter au panier</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
 
     
+
+
+<!--Modal Panier-->
+<div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="panierLateral">
+  <div class="offcanvas-header border-bottom border-secondary">
+    <h5 class="offcanvas-title fw-bold text-warning">MON PANIER</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+  
+  <div class="offcanvas-body d-flex flex-column">
+    <div id="listePanier" class="flex-grow-1 overflow-auto">
+        <p class="text-center text-muted mt-5">Votre panier est vide.</p>
+    </div>
+
+    <div class="border-top border-secondary pt-3 mt-auto">
+        <div class="d-flex justify-content-between fs-5 mb-3">
+            <span>Total :</span>
+            <span id="totalPanier" class="text-warning">0.00 $</span>
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-warning fw-bold" type="button">COMMANDER</button>
+            <button class="btn btn-outline-danger btn-sm" onclick="viderPanier()">Vider le panier</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal Contact-->
+ <div class="modal fade" id="modalContact" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary">
+            <div class="modal-header border-secondary">
+                <h5 class="modal-title">Nous contacter</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="formulaireContact" novalidate>
+                    <div class="mb-3">
+                        <label for="nomUsager" class="form-label">Nom complet</label>
+                        <input type="text" class="form-control" id="nomUsager" placeholder="Min. 3 caractères">
+                        <div class="message-erreur text-danger small" id="erreurNom"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="courrielUsager" class="form-label">Adresse courriel</label>
+                        <input type="email" class="form-control" id="courrielUsager" placeholder="exemple@domaine.com">
+                        <div class="message-erreur text-danger small" id="erreurCourriel"></div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="messageUsager" class="form-label">Votre message</label>
+                        <textarea class="form-control" id="messageUsager" rows="4" placeholder="Min. 10 caractères"></textarea>
+                        <div class="message-erreur text-danger small" id="erreurMessage"></div>
+                    </div>
+                    
+                    <div id="confirmationSucces" class="alert alert-success d-none">
+                        Votre message a été envoyé avec succès !
+                    </div>
+                    
+                    <button type="submit" class="btn btn-warning w-100">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- Modal Voir plus-->
                         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">

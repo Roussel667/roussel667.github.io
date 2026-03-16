@@ -56,7 +56,7 @@ li{
     transition: border-color 0.1s ease-in-out;
     padding: 0 10px;
 }
-li:hover {
+header li:hover {
     border-bottom: #FAD168 2px solid;
 }
 nav a {
@@ -280,6 +280,53 @@ nav a {
     font-size:16px;
     margin-bottom:10px;
 }
+
+footer{
+    height: 12rem;
+    background-color: #0f0f0f;
+}
+footer ul {
+    gap: 6rem;
+}
+footer i{
+    margin-top: 3rem;
+}
+.fa-brands {
+  color: white;
+  font-size: 3rem;
+  padding-right: 25px;  
+}
+.ref{
+    margin-top: 3rem;
+    color: #555;
+}
+.ref ul{
+    list-style-type: none;
+    display: flex;
+    gap: 0.5rem;
+}
+.ref a{
+    text-decoration: none;
+    color: #FAD168;
+}
+.ref li:hover{
+    border-bottom: #FAD168 1px solid;
+}
+
+//Tout les produit afficher
+.modelProduit{
+    background-color: rgba(15, 15, 15, 0.8);    
+}
+.modelProduit .modal-header{
+    background-color: #0f0f0f;
+    color: white;
+}
+.modelProduit .modal-footer{
+    background-color: #0f0f0f;
+    color: white;
+}
+
+
 
 
 
