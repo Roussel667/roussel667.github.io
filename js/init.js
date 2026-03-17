@@ -77,6 +77,16 @@ document.getElementById('formulaireContact').addEventListener('submit', function
 
 
 
+//défilement vers produits
+
+let propro = document.querySelector("#propro")
+propro.addEventListener("click", () =>{
+    window.scrollTo(
+        {
+            top : 940
+        })
+})
+
 
 
 
