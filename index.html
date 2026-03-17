@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
             </nav>
         </header>        
             <div>
-                <img class="w-100 mt-2" src="img/banniere-officiel.jpg" alt="clavier">
+                <img class="w-100 mt-2 rounded-3" src="img/banniere-officiel.jpg" alt="clavier">
             </div>
     </div>
 
@@ -56,7 +56,8 @@
                     <div class="box1 text-center">
                         <img class="w-100" src="img/clavierTenZ80he.png" alt="80heTenZ">
 
-                        <h2>Nouvelle Ère <div class="TenZ">TenZ</div></h2>
+                        <h2>Nouvelle Ère </h2>
+                        <div class="TenZ">TenZ</div>
                         <p>Maintenant disponible</p>
 
                         <!-- <button type="button" class="btn btn-red-custom">Voir Plus</button> -->
@@ -67,7 +68,8 @@
                     
                         <img class="w-100" src="img/clavier60heV2.png" alt="60heV1">
 
-                        <h2>Un Classique, <div class="reinvente">Réinventé</div></h2>
+                        <h2>Un Classique</h2>
+                        <div class="reinvente">Réinventé</div>
                         <p>Le plus Efficace en compétition FPS</p>
 
                         <!-- <button type="button" class="btn btn-gold-custom">Voir Plus</button> -->
@@ -94,13 +96,13 @@
                         
                     </div>
                 <div class="histoireImage">
-                    <img src="img/wooting60he_histoire.jpg" alt="">
+                    <img src="img/wooting60he_histoire.jpg" alt="histoire wooting">
                 </div>                
             </div>            
         </main>
 
         <section>
-            <H1 class="categorie pt-5">Catégorie</H1>
+            <h1 class="categorie pt-5">Catégorie</h1>
 
             <div class="toutBouto d-flex">
 
@@ -156,8 +158,9 @@
             </div>
         </section>
     </div>
-
+ 
     <footer>
+      <div class="container">
       <ul class="d-flex justify-content-center">
         <li><a href="https://discord.gg/wooting" target="_blank"><i class="fa-brands fa-discord"></i></a> </li>
           <li><a href="https://www.youtube.com/@Wooting" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
@@ -165,16 +168,21 @@
           <li><a href="https://x.com/WootingKB" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>       
     </ul>
     
-      <div class="ref d-flex">
-        <p>Mentions légal  : </p>
+      <div class="ref d-flex justify-content-between">
+        <div class="refL d-flex">
+        <p>Reference: </p>
         <ul class="siteRef">
           <li><a href="https://drop.com/" target="_blank">Drop</a></li>
           <li><a href="https://wooting.io/" target="_blank">Wooting</a></li>
-        </ul>
-        
+        </ul>        
       </div>
-
+      <div>
+        <a id="mentionL" href="#">Mention Légale</a>
+      </div>
+      </div>
+    </div>
     </footer>
+    
 
 
     <button id="retourHaut">↑</button>
@@ -202,7 +210,7 @@
           <!-- Produit 1-->
           <div class="w-50">
             <div class="product-card">
-              <img src="img/lekkenTikkenSwitch.jpg" class="product-img">
+              <img class="product-img" src="img/lekkenTikkenSwitch.jpg" alt="Lekken switch" >
               <h5>Tikken Lekken Switches</h5>
               <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#productModal">Voir</button>
             </div>
@@ -211,7 +219,7 @@
           <!-- Produit 2-->
           <div class="w-50">
             <div class="product-card">
-              <img src="img/uwuWooting.png" class="product-img">
+              <img class="product-img" src="img/uwuWooting.png" alt="uwu">
               <h5>Wooting UwU</h5>
               <button class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#productModal">Voir</button>
             </div>
@@ -242,7 +250,7 @@
           <!-- Produit 1-->
           <div class="w-50">
             <div class="product-card">
-              <img src="img/cableWooting.jpg" class="product-img">
+              <img class="product-img" src="img/cableWooting.jpg" alt="cable">
               <h5>Cable pour Wooting</h5>
               <button class="btn btn-outline-light btn-sm">Voir</button>
             </div>
@@ -251,7 +259,7 @@
           <!-- Produit 2-->
           <div class="w-50">
             <div class="product-card">
-              <img src="img/travelCase1.png" class="product-img">
+              <img class="product-img" src="img/travelCase1.png" alt="Case travel">
               <h5>60HE (v2) Travel Case</h5>
               <button class="btn btn-outline-light btn-sm">Voir</button>
             </div>
@@ -282,7 +290,7 @@
           <!-- Produit 1-->
           <div class="w-50">
             <div class="product-card">
-              <img src="img/clavier60heV1.png" class="product-img">
+              <img class="product-img" src="img/clavier60heV1.png" alt="Clavier 60he v1">
               <h5>Clavier 60He V1</h5>
               <button class="btn btn-outline-light btn-sm">Voir</button>
             </div>
@@ -291,7 +299,7 @@
           <!-- Produit 2-->
           <div class="w-50">
             <div class="product-card">
-              <img src="img/clavier80heV1.png" class="product-img">
+              <img class="product-img" src="img/clavier80heV1.png" alt="Clavier 80h2 v1" >
               <h5>Clavier 80He V1</h5>
               <button class="btn btn-outline-light btn-sm">Voir</button>
             </div>
@@ -322,16 +330,15 @@
           <!-- Produit 1-->
           <div class="w-50">
             <div class="product-card">
-              <img src="img/keycaps1JapRouge.png" class="product-img">
+              <img class="product-img" src="img/keycaps1JapRouge.png" alt="keycaps rouge">
               <h5>RedSuns GMK Red Samurai Keycap Set</h5>
               <button class="btn btn-outline-light btn-sm">Voir</button>
             </div>
           </div>
-
           <!-- Produit 2-->
           <div class="w-50">
             <div class="product-card">
-              <img src="img/keycaps2Wave1.png" class="product-img">
+              <img class="product-img" src="img/keycaps2Wave1.png" alt="keycaps">
               <h5>Magnetic Wave Keycap Set</h5>
               <button class="btn btn-outline-light btn-sm">Voir</button>
             </div>
@@ -468,7 +475,7 @@
 
                                     <p>Alors que les claviers à entrée numérique dominaient un marché davantage préoccupé par des fonctionnalités RGB superficielles, nous avons vu l'avenir dans les claviers à entrée analogique. Ils permettent une saisie plus rapide, un contrôle plus précis et ouvrent la voie à des fonctionnalités que les claviers numériques ne peuvent tout simplement pas offrir.</p>
 
-                                    <p></p>En 2015, nous avons entamé notre aventure avec l'ambition de faire des claviers à entrée analogique le nouveau standard, d'en explorer tout le potentiel et de bousculer une industrie devenue bien trop confortable, en montrant l'exemple.
+                                    <p>En 2015, nous avons entamé notre aventure avec l'ambition de faire des claviers à entrée analogique le nouveau standard, d'en explorer tout le potentiel et de bousculer une industrie devenue bien trop confortable, en montrant l'exemple.
                                     </p>
                                 </div>
                             </div>

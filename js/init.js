@@ -1,6 +1,3 @@
-// =============================
-// 🔝 BOUTON RETOUR EN HAUT
-// =============================
 const btn = document.querySelector('#retourHaut');
 
 window.addEventListener('scroll', () => {    
@@ -16,9 +13,6 @@ btn.addEventListener('click', () => {
 });
 
 
-// =============================
-// 📩 VALIDATION FORMULAIRE
-// =============================
 document.getElementById('formulaireContact').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -62,20 +56,13 @@ document.getElementById('formulaireContact').addEventListener('submit', function
 });
 
 
-// =============================
-// 📜 SCROLL PRODUITS
-// =============================
 document.querySelector("#propro").addEventListener("click", () => {
     window.scrollTo({ top: 940, behavior: "smooth" });
 });
 
 
-// =============================
-// 🛒 PANIER (AVEC QUANTITÉ)
-// =============================
 let panier = JSON.parse(localStorage.getItem("panierWooting")) || [];
 
-// Fix anciens produits
 panier = panier.map(p => ({ ...p, quantite: p.quantite || 1 }));
 
 function afficherPanier() {
@@ -165,9 +152,6 @@ function viderPanier() {
 document.addEventListener("DOMContentLoaded", afficherPanier);
 
 
-// =============================
-// 📦 PRODUITS DYNAMIQUES
-// =============================
 function afficherProduits(cat, idConteneur) {
     fetch("produits.json")
         .then(r => r.json())
@@ -208,9 +192,6 @@ function afficherProduits(cat, idConteneur) {
 }
 
 
-// =============================
-// 🔗 MODALS
-// =============================
 document.getElementById('ongletHardware')
     .addEventListener('show.bs.modal', () => afficherProduits("hardware", "hardProduit"));
 
@@ -224,9 +205,6 @@ document.getElementById('ongletKeycaps')
     .addEventListener('show.bs.modal', () => afficherProduits("keycaps", "keycapsProduit"));
 
 
-// =============================
-// 🔍 MODAL DÉTAIL
-// =============================
 document.addEventListener("click", function(e) {
     if (e.target.classList.contains("btn-detail")) {
 
@@ -251,9 +229,6 @@ document.addEventListener("click", function(e) {
 });
 
 
-// =============================
-// ➕ AJOUT DEPUIS MODAL
-// =============================
 document.getElementById("addToCart").addEventListener("click", function() {
 
     const nom = document.querySelector("#productModal .modal-title").textContent;
